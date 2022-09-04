@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5格式标签</title>
+  </head>
+  <body>
+    <!-- abbr标签定义一个缩写 -->
+    The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.
+
+    <!-- address标签定义文档作者或拥有者的联系信息 -->
+    <address>
+      Written by <a href="1906167102@qq.com">chenyonwu</a>.<br />
+      Visit us at:<br />
+      qq.com<br />
+      Box 564, Disneyland<br />
+      USA
+    </address>
+
+    <!-- 
+      b标签定义粗体文本
+      
+      根据HTML 5的规范，b标签应该作为最后的选择，只有在没有其他标记比较合适时才使用它。HTML 5规范声明：标题应该用h1-h6标签表示，被强调的文本应该用em标签表示，重要的文本应该用strong标签标识，被标记的或者高亮显示的文本应该是mark标签标识
+     -->
+    <p>这是一个普通的文本-<b>这是一个加粗文本</b>。</p>
+
+    <!-- blockquote标签定义一个摘自另一个源的块引用 -->
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+      For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF
+      works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million
+      globally.
+    </blockquote>
+
+    <!-- q标签定义短引用 -->
+    <p>
+      WWF's goal is to:
+      <q>Build a future where people live in harmony with nature.</q>
+      We hope they succeed.
+    </p>
+
+    <!-- cite标签定义引用 -->
+    <p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+
+    <!-- code标签定义计算机代码文本 -->
+    <code>一段电脑代码 print("Hello World")</code>
+
+    <!-- del标签定义被删除文本, ins标签定义被插入文本 -->
+    <p>My favorite color is <del>blue</del> <ins>red</ins>!</p>
+
+    <!-- meter标签定义度量衡。仅用于已知最大和最小值的度量，IE浏览器不支持 -->
+    <meter value="2" min="0" max="10">2 out of 10</meter><br />
+    <meter value="0.6">60%</meter>
+
+    <!-- pre标签定义预格式文本 -->
+    <pre>
+      此例演示如何使用 pre 标签
+      对空行和 空格
+      进行控制
+    </pre>
+
+    <!-- progress标签定义运行中的任务进度（进程） -->
+    <progress value="22" max="100"></progress>
+
+    <!-- small标签定义小号文本 -->
+    <p>runoob.com - the world's largest web development site.</p>
+    <p><small> Copyright 1999-2050 by Refsnes Data.</small></p>
+
+    <!-- sub定义下标文本，sup定义上标文本 -->
+    <p>这个文本包含 <sub>下标</sub>文本。</p>
+    <p>这个文本包含 <sup>上标</sup> 文本。</p>
+
+    <!-- time标签定义一个日期/时间 -->
+    <p>我们在每天早上 <time>9:00</time> 开始营业。</p>
+    <p>我在 <time datetime="2016-02-14">情人节</time> 有个约会。</p>
+  </body>
+</html>

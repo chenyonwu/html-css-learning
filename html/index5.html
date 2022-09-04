@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML表格标签</title>
+  </head>
+  <body>
+    <!-- table标签定义一个表格 -->
+    <table border="1">
+      <!-- caption标签定义表格标题 -->
+      <caption>
+        Monthly savings
+      </caption>
+      <!-- thead标签定义表格中的表头内容 -->
+      <thead>
+        <!-- tr标签定义表格中的行 -->
+        <tr>
+          <!-- th标签表格中的表头单元格 -->
+          <th>Month</th>
+          <th>Savings</th>
+        </tr>
+      </thead>
+      <!-- tbody标签定义表格中的主体内容 -->
+      <tbody>
+        <tr>
+          <!-- td定义表格中的单元 -->
+          <td>January</td>
+          <td>$100</td>
+        </tr>
+        <tr>
+          <td>February</td>
+          <td>$80</td>
+        </tr>
+      </tbody>
+      <!-- tfoot定义表格中的表注内容（脚注） -->
+      <tfoot>
+        <tr>
+          <td>Sum</td>
+          <td>$180</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <table border="1">
+      <!-- colgroup标签定义表格中供格式化的列祖 -->
+      <colgroup>
+        <!-- col标签定义表格中一个或多个列的属性值 -->
+        <col span="2" style="background-color: red" />
+        <col style="background-color: yellow" />
+      </colgroup>
+      <tr>
+        <th>ISBN</th>
+        <th>Title</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>3476896</td>
+        <td>My first HTML</td>
+        <td>$53</td>
+      </tr>
+    </table>
+  </body>
+</html>
