@@ -1,3 +1,49 @@
+# html 元素解析与基础
+
+<img src="https://gitee.com/chenyonwu/blogimage/raw/master/img/202209061719144.jpg"/>
+
+## 1 元素解析
+
+### 1.1 元素
+
+![image-20220906195731716](https://gitee.com/chenyonwu/blogimage/raw/master/img/202209061957811.png)
+
+HTML文档由 HTML 元素定义
+
+- 元素以**开始标签**起始，以**结束标签**终止
+- 开始标签与结束标签中间的内容即为**元素的内容**
+- 某些元素具有空内容，如`<img />`。这样的标签**在开始标签进行关闭**
+- 大多数元素可以拥有**属性**
+
+### 1.2 属性
+
+属性是 HTML 元素提供的附加信息，一般描述于**开始标签**，总是以**名称/值**对的形式出现，比如：`name="value"`
+
+```html
+<a href="https://www.bilibili.com/">点我进入b站</a>
+```
+
+HTML 的全局属性完整列表如下：
+
+| 属性            | 描述                                                       |
+| --------------- | ---------------------------------------------------------- |
+| contenteditable | 规定是否可编辑元素的内容                                   |
+| contextmenu     | 指定一个元素的上下文菜单。当用户右击该元素，出现上下文菜单 |
+| data-           | 用于存储页面的自定义数据                                   |
+| dir             | 设置元素中内容的文本方向                                   |
+| lang            | 设置元素中内容的语言代码                                   |
+| accesskey       | 设置访问元素的键盘快捷键                                   |
+| draggable       | 指定某个元素是否可以拖动                                   |
+| dropzone        | 指定是否将数据复制，移动，或链接，或删除                   |
+| hidden          | hidden 属性规定对元素进行隐藏                              |
+| spellcheck      | 检测元素是否拼写错误                                       |
+| tabindex        | 设置元素的 Tab 键控制次序                                  |
+| title           | 规定元素的额外信息                                         |
+| translate       | 指定是否一个元素的值在页面载入时是否需要翻译               |
+
+## 2 基础示例
+
+```html
 <!-- 
   DOCTYPE的作用是定义文档类型，声明文档的解析类型，避免浏览器的怪异模式
 
@@ -85,5 +131,48 @@
     <!-- link标签定义文档与外部资源的关系 -->
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body></body>
+  <body>
+    <h1>一级标题</h1>
+    <h2>二级标题</h2>
+    <h3>三级标题</h3>
+    <h4>四级标题</h4>
+    <h5>五级标题</h5>
+    <h6>六级标题</h6>
+
+    <!-- p标签定义一个段落 -->
+    <p>
+      HTML stands for HyperText Markup Language. It's a markup language that web developers use to structure and
+      describe the content of a webpage (not a programming language).
+    </p>
+
+    <!-- br标签定义简单的换行 -->
+    <br />
+    <!-- hr标签定义水平线 -->
+    <hr />
+
+    <!-- a标签定义超文本链接 -->
+    <a href="https://www.bilibili.com/" target="_blank">点我进入b站</a>
+
+    <!-- button标签定义一个点击按钮 -->
+    <button onclick="alert('hello, world~')">点我一下</button>
+
+    <!-- img标签定义图像 -->
+    <img src="image1.jpg" alt="这是图片1的描述" />
+
+    <!-- 有序列表 -->
+    <ol>
+      <li>第一</li>
+      <li>第二</li>
+      <li>第三</li>
+    </ol>
+
+    <!-- 无序列表 -->
+    <ul>
+      <li>第一</li>
+      <li>第二</li>
+      <li>第三</li>
+    </ul>
+  </body>
 </html>
+```
+

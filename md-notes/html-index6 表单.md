@@ -1,0 +1,116 @@
+# html 表单
+
+<img src="https://gitee.com/chenyonwu/blogimage/raw/master/img/202209062022305.jpeg"/>
+
+HTML 表单用于收集用户的输入信息
+
+HTML 表单表示文档中的一个区域，此区域包含交互控件，将用户收集到的信息发送到 Web 服务器
+
+**表单示例代码**
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML表单标签</title>
+  </head>
+  <body>
+    <!-- form标签定义一个HTML表单，用于用户输入 -->
+    <form action="demo_form.php" method="get">
+      <!-- 
+        input标签定义一个输入控件，它所有的type属性有如下值：
+          - button
+          - checkbox
+          - color
+          - date
+          - datetime
+          - datetime-local
+          - email
+          - file
+          - hidden
+          - image
+          - month
+          - number
+          - password
+          - radio
+          - range
+          - reset
+          - search
+          - submit
+          - tel
+          - text
+          - time
+          - url
+          - week
+       -->
+      First name: <input type="text" name="fname" /><br />
+      Last name: <input type="text" name="lname" /><br />
+      <input type="submit" value="提交" />
+
+      <!-- textarea标签定义文本框 -->
+      <textarea rows="10" cols="30">
+        我是一个文本框
+      </textarea>
+
+      <!-- button定义按钮 -->
+      <button type="button">点我</button>
+      <button type="reset">重置</button>
+      <button type="submit">提交</button>
+
+      <!-- select标签定义选择/下拉列表 -->
+      <select>
+        <option value="volvo">Volvo</option>
+        <option value="saab">Saab</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+
+      <!-- optgroup标签选择列表中相关选项的组合 -->
+      <select>
+        <optgroup label="Swedish Cars">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option value="mercedes">Mercedes</option>
+          <option value="audi">Audi</option>
+        </optgroup>
+      </select>
+
+      <!-- label标签定义input元素的标注 -->
+      <label for="male">Male</label>
+      <input type="radio" name="sex" id="male" value="male" /><br />
+
+      <!-- fieldset标签定义围绕表单中元素的边框 -->
+      <fieldset>
+        <!-- legend定义fieldset元素的标题 -->
+        <legend>Personalia:</legend>
+        Name: <input type="text" /><br />
+        Email: <input type="text" /><br />
+        Date of birth: <input type="text" />
+      </fieldset>
+
+      <!-- 规定了input元素可能的选项列表 -->
+      <input list="browsers" />
+      <datalist id="browsers">
+        <option value="Internet Explorer"></option>
+        <option value="Firefox"></option>
+        <option value="Chrome"></option>
+        <option value="Opera"></option>
+        <option value="Safari"></option>
+      </datalist>
+
+      <!-- keygen标签用于表单的密钥对生成器字段 -->
+      <form action="demo_keygen.asp" method="get">
+        用户名: <input type="text" name="usr_name">
+        加密: <keygen name="security">
+        <input type="submit">
+      </form>
+    </form>
+  </body>
+</html>
+```
+
